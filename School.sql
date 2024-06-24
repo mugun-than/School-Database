@@ -397,5 +397,3 @@ having exam_id = 1;
 select student_id, student_name, sum(amount_paid) as amount_paid, abs(sum(amount_paid) - fee) as due_amount  
 from FeePayment join Students on FeePayment.student_id = Students.id join Standards on Students.standard_id = Standards.id
 group by student_id;
-select * 
-from FeePayment join Students on FeePayment.student_id = Students.id join Standards on Students.standard_id = Standards.id;
